@@ -17,7 +17,7 @@ const Pagination = () => {
             setDataAll(data);
             setEmpData(loadData) 
          
-        }).catch((err) => console.log(err))
+        }).catch((err) => alert("failed to fetch data"))
 
 
      
