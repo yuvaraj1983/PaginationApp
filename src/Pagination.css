@@ -1,0 +1,50 @@
+table {
+    width: 100vw;
+    border-collapse: collapse;
+ 
+    border: 1px solid black;
+    font-style: normal;
+    font-size: 12px;
+}
+/* tbody tr {
+    border-bottom: 1px solid black;
+} */
+
+td {
+    border-bottom: 0.1px solid gray;
+   text-align: left;
+   padding: 5px;
+  }
+
+/* td {
+    border-bottom: 1px solid black;
+
+} */
+
+thead {
+    background-color: gray;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+.divstyle {
+    margin: 20px;
+}
+
+.common {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.span {
+  
+    background-color: gray;
+}
