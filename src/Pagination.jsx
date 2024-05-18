@@ -11,17 +11,16 @@ const Pagination = () => {
     useEffect(() => {
         axios.get(url).then((res) => res.data)
         .then((data) => {
-            console.log(data)
+         
             const loadData = data.slice(pageno-1,pagelimit);
             console.log("loadData", loadData)
             setDataAll(data);
             setEmpData(loadData) 
-           // setDataAll(data) 
-           // setEmpData(data) 
-        })
+         
+        }).catch((err) => console.log(err))
 
 
-       // setEmpData(data.slice(0,10)) 
+     
     },[])
 
     const handlePrevious = () => {
@@ -35,8 +34,7 @@ const Pagination = () => {
       
        const start = ((pageno-2)*pagelimit);
        const end = (pageno-1)*pagelimit;
-        console.log("start", start)
-        console.log("end", end)
+        
       const nextdata =  dataall.slice(start,end);
 
        setEmpData(nextdata) 
